@@ -1,0 +1,12 @@
+Im using spotify UI as  example to explain below 6 sections
+1. Identity: Spotify has logo and colour scheme in green and black which is Identity
+
+2. Element: "Your Libary" and "Trending Songs" are the example of elements as they are using heading tags
+
+3.Component : Under Trending Songs heading we have a Component which shows photos and names of Songs
+
+4.Composition : Create your first playlist and inside we have create playlist option which is a Composition a complex structure
+
+5. Layout: Layout is arrangement of component and Composition whcih is visible in spotify ui in dark lines
+
+6. pages: Page is collection of Compositions and this ui has multiple Compositions in single page
