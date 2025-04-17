@@ -1,0 +1,42 @@
+<div class="sign-up-container">
+  <h2>Sign Up</h2>
+  <form (ngSubmit)="onSubmit()" #signUpForm="ngForm">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        class="form-control"
+        [(ngModel)]="username"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="form-control"
+        [(ngModel)]="email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        class="form-control"
+        [(ngModel)]="password"
+        required
+      />
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!signUpForm.valid">
+      Sign Up
+    </button>
+  </form>
+  <p *ngIf="message" style="color: green;">{{ message }}</p>
+</div>
